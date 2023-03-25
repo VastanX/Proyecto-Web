@@ -1,13 +1,8 @@
-.matriz{
-    padding: 1em;
-    margin: 1em;
-    border: dotted;
-    color: white;
-}
+
 .linea{
     display: flex;
 }
-.cuento{
+.cuento, .matriz{
 
     padding: 1em;
     margin: 1em;
@@ -55,4 +50,7 @@ figcaption{
     1px -1px 0 black,
     -1px 1px 0 black,
     1px 1px 0 black;
+}
+button{
+    font-size: 1.5rem;
 }
