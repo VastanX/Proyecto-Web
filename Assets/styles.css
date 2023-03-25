@@ -1,0 +1,30 @@
+.matriz{
+    padding: 1em;
+    margin: 1em;
+    border: solid;
+}
+.linea{
+    display: flex;
+}
+.cuento{
+
+    padding: 1em;
+    margin: 1em;
+    border: solid;
+    color: black;
+
+}
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-top: 0;
+  }
+  
