@@ -51,13 +51,10 @@ figcaption{
     -1px 1px 0 black,
     1px 1px 0 black;
 }
+
 button{
     font-size: 1.5rem;
-}
-
-.paginaCuento{
-    display: flex;
-    margin-left: 600px;
+    margin-bottom: 20px;
 }
 
 .bloque{
@@ -66,10 +63,6 @@ button{
     margin-left: 50px;
     width: 300px;
     height: 100px;
-}
-
-.boton{
-    margin-bottom: 20px;
 }
 
 .recomendaciones{
@@ -90,31 +83,8 @@ button{
 .paginaCuento{
     height: 700px;
     width: 500px;
-}
-
-.paginaCuento{
     display: flex;
     margin-left: 600px;
 }
 
-.bloque{
-    display: grid;
-    margin-top: 100px;
-    margin-left: 50px;
-    width: 300px;
-    height: 100px;
-}
 
-.boton{
-    margin-bottom: 20px;
-}
-
-.recomendaciones{
-    font-size: 50px;
-}
-
-.listadoReco{
-    display:flex;
-    width: 10px;
-    height: 300px;
-}
