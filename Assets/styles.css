@@ -6,7 +6,7 @@
 
     padding: 1em;
     margin: 0.7em;
-    border: dotted;
+    
     color: white;
     text-align: center;
   
@@ -54,7 +54,12 @@ figcaption{
 
 button{
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    border: solid;
+    background-color: transparent;
+    font-style: italic;
+    background-color: aliceblue;
+  
 }
 
 .bloque{
