@@ -26,7 +26,7 @@
     padding-left: 100px;
     padding-right: 100px;
     color: white;
-    border: dashed;
+    
     text-shadow:
     -1px -1px 0 black,
     1px -1px 0 black,
@@ -53,12 +53,18 @@ figcaption{
 }
 
 button{
-    font-size: 1.5rem;
-    margin-top: 10px;
-    border: solid;
-    background-color: transparent;
+    font-size: 1.2rem;
+    padding: 20px;
+    
+   
+    background: none;
+    border: none;
+    background-image:url(pergamino.png);
+    
+  
+   
     font-style: italic;
-    background-color: aliceblue;
+   
   
 }
 
@@ -91,5 +97,25 @@ button{
     display: flex;
     margin-left: 600px;
 }
+
+p.Info{
+    color: white;
+    font-size: 500%;
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+.info{
+    font-size: 350%;
+    color: black;
+    text-shadow:
+    -1px -1px 0  white,
+    1px -1px 0  white,
+    -1px 1px 0  white,
+    1px 1px 0  white;
+}
+
 
 
