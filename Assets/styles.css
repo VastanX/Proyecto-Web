@@ -117,5 +117,11 @@ p.Info{
     1px 1px 0  white;
 }
 
+.cabecera{
+    display: flex;
+    list-style: none;
+    float: right;
+}
+
 
 
