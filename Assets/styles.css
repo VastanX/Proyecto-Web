@@ -159,12 +159,14 @@ li.texto_info{
 }
 
 #toc_container {
-    background: #d4bb89 none repeat scroll 0 0;
-    border: 1px solid #aaa;
+    background: wheat none repeat scroll 0 0;
+    border: solid black;
     display: table;
     font-size: 95%;
-    margin-bottom: 1em;
-    padding: 20px;
+    margin-left: 100px;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    padding: 100px;
     width: auto;
 }
 
