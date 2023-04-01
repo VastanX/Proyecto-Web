@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calificación</title>
+   <link rel="stylesheet" href="Assets/styles.css">
+</head>
+
+<body>
+
+    <a href="index.html"><button>Volver al inicio</button></a>
+        
+    <div class="cabecera">
+        <li><a href="info.html"><button>Información</button></a></li>
+        <li><a href="login.html"><button>Iniciar sesión</button></a></li>
+        <li><a href="registro.html"><button>Registrarse</button></a></li>
+        <li><a href="contacto.html"><button>Contacto</button></a></li>
+    </div>
+
+   <form style="margin-top: 100px;">
+      <fieldset style="color: white;" class="rating">
+         <legend style="font-size: 30px;">¿Cómo calificarias el libro?</legend>
+
+         <input type="radio" id="rate1" name="rating" value="1">
+         <label for="rate1">Muy malo</label>
+
+         <input type="radio" id="rate2" name="rating" value="2">
+         <label for="rate2">Malo</label>
+
+         <input type="radio" id="rate3" name="rating" value="3">
+         <label for="rate3">Ni bueno ni malo</label>
+
+         <input type="radio" id="rate4" name="rating" value="4">
+         <label for="rate4">Bueno</label>
+
+         <input type="radio" id="rate5" name="rating" value="5">
+         <label for="rate5">Muy bueno</label>
+
+         <span class="focus-ring"></span>
+      </fieldset>
+   </form>
+
+   <form>
+        <fieldset style="color: white;" class="rating">
+            <legend style="font-size: 30px;">¿Recomendarías este libro a otras personas?</legend>
+
+            <input type="radio" id="rate1" name="rating" value="1">
+            <label for="rate1">Si</label>
+
+            <input type="radio" id="rate2" name="rating" value="2">
+            <label for="rate2">No</label>
+
+            <input type="radio" id="rate3" name="rating" value="3">
+            <label for="rate3">No lo sé</label>
+
+            <span class="focus-ring"></span>
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset style="color: white;" class="rating">
+            <legend style="font-size: 30px;">¿Qué dificultad le darías a la lectura de este cuento?</legend>
+ 
+            <input type="radio" id="rate1" name="rating" value="1">
+            <label for="rate1">Para principiantes</label>
+ 
+            <input type="radio" id="rate2" name="rating" value="2">
+            <label for="rate2">Fácil de leer</label>
+ 
+            <input type="radio" id="rate3" name="rating" value="3">
+            <label for="rate3">Normal</label>
+
+            <input type="radio" id="rate4" name="rating" value="4">
+            <label for="rate4">Para lectores hábiles</label>
+
+            <input type="radio" id="rate5" name="rating" value="5">
+            <label for="rate5">Nivel avanzado</label>
+ 
+            <span class="focus-ring"></span>
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset style="color: white;">
+            <legend style="font-size: 30px;">Escribe una pequeña reseña sobre el libro</legend>
+ 
+            <input style="width: 600px; height: 100px;" type="text" id="resenia" name="resenia">
+
+            <span class="focus-ring"></span>
+        </fieldset>
+
+    </form>
+
+    <footer>
+        <a href="reporte.html"><button style="color: crimson;">Reportar error</button></a>
+    </footer>
+
+
+</body>
+
+</html>
