@@ -145,11 +145,15 @@ div.container{
     text-align: center;
     font-size: 140%;
     background-color:cornsilk;
+}
 
-    
-
-    
-    
-    
+li.texto_info{
+    font-size: 140%;
+    color: black;
+    border: solid;
+    background-color: wheat;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: -700px;
 
 }
