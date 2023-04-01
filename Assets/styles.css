@@ -119,3 +119,29 @@ p.Info{
 
 
 
+div.container{
+    padding: 100px;
+    margin: 100px;
+    margin-right: 50px;
+
+    /* background-image: url(book.png); */
+    /* background-repeat: no-repeat;
+    background-position: 350px 50px;
+    background-size: 70%; */
+}
+
+#registro{
+
+    border: dotted;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 140%;
+    background-color:cornsilk;
+
+    
+
+    
+    
+    
+
+}
