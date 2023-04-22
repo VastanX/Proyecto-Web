@@ -163,3 +163,10 @@ li.texto_info{
 #toc_container li, #toc_container ul, #toc_container ul li{
     list-style: outside none none !important;
 }
+
+.c1{
+    height:700px;
+    width: 700;
+    margin-top: 100px;
+
+}
