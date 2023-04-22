@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="Assets/styles.css">
     </head>
     <body>
-        
         <a href="index.html"><button>Volver al inicio</button></a>
 
         <div class="cabecera">
@@ -26,40 +25,44 @@
                     <center><p style="font-size: 50px;">Formulario de contacto</p></center>
                     <p>
                     
-                        <label>Nombre completo</label>
+                        <label for="nombre">Nombre completo</label>
+                        <span></span>
                         <br>
-                        <input style="font-size: 20px;" type="text" id="nombre" required/>
+                        <input style="font-size: 20px;" type="text" id="nombre" name="nombre"/>
 
                     </p>
                     <p>
                     
-                        <label>Correo de contacto</label>
+                        <label for="email">Correo de contacto</label>
+                        <span></span>
                         <br>
-                        <input style="font-size: 20px;" type="email" id="email"  required/>
+                        <input style="font-size: 20px;" type="email" id="email" name="email" />
                     
                     </p>
                     <p>
                     
-                        <label>Telefono de contacto (+56)</label>
+                        <label for="telefono">Telefono de contacto (+56)</label>
+                        <span></span>
                         <br>
-                        <input style="font-size: 20px;" type="number" id="recontrasena" required>
+                        <input style="font-size: 20px;" type="text" id="telefono" name="telefono">
 
                     </p>
                     <p>
                     
-                        <label>Asunto</label>
+                        <label for="asunto">Asunto</label>
+                        <span></span>
                         <br>
-                        <input style="font-size: 20px;" type="text" id="asunto" required>
+                        <input style="font-size: 20px;" type="text" id="asunto" name="asunto">
 
                     </p>
                     <p>
                     
-                        <label>Descripción </label>
+                        <label for="descripcion">Descripción </label>
+                        <span></span>
                         <br>
-                        <input style="height: 50px; width: 400px;" type="text" id="descripcion" required>
+                        <input style="height: 50px; width: 400px;" type="text" id="descripcion" name="descripcion">
 
                     </p>
-
 
                     <button type="submit">Enviar</button>
                 
@@ -71,6 +74,9 @@
             <a href="reporte.html"><button style="color: crimson;">Reportar error</button></a>
         </footer>
 
-        <script src="" async defer></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>   
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" crossorigin="anonymous"></script>
+        <script src="js-jquery/contacto.js"></script>
+
     </body>
 </html>

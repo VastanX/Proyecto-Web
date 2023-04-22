@@ -1,12 +1,10 @@
-
-.linea{
-    display: flex;
-}
-.cuento, .matriz{
-
-    padding: 1em;
-    margin: 0.7em;
+div .row{
+    /* flex-wrap:nowrap; */
+    margin-top: 100px;
     
+}
+
+.cuento, .container{
     color: white;
     text-align: center;
   
@@ -22,9 +20,8 @@
   
   h1 {
     font-size: 5rem;
-    margin-left: 700px;
-    padding-left: 100px;
-    padding-right: 100px;
+    
+    
     color: white;
     
     text-shadow:
@@ -125,19 +122,6 @@ p.Info{
     float: right;
 }
 
-
-
-div.container{
-    padding: 100px;
-    margin: 100px;
-    margin-right: 50px;
-
-    /* background-image: url(book.png); */
-    /* background-repeat: no-repeat;
-    background-position: 350px 50px;
-    background-size: 70%; */
-}
-
 #registro{
 
     border: dotted;
@@ -145,6 +129,7 @@ div.container{
     text-align: center;
     font-size: 140%;
     background-color:cornsilk;
+    color: black;
 }
 
 li.texto_info{
@@ -156,4 +141,25 @@ li.texto_info{
     padding-bottom: 15px;
     padding-left: -700px;
 
+}
+
+#toc_container {
+    background: wheat none repeat scroll 0 0;
+    border: solid black;
+    display: table;
+    font-size: 95%;
+    margin-left: 100px;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    padding: 100px;
+    width: auto;
+}
+
+.toc_title {
+    font-weight: 700;
+    text-align: center;
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li{
+    list-style: outside none none !important;
 }

@@ -7,7 +7,11 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <link rel="stylesheet" href="Assets/styles.css">
+
+        
+
     </head>
     <body>
         <a href="index.html"><button>Volver al inicio</button></a>
@@ -18,24 +22,20 @@
             <li><a href="registro.html"><button>Registrarse</button></a></li>
             <li><a href="contacto.html"><button>Contacto</button></a></li>
         </div>
-
-        <header>
-
-        </header>
         <section>
             <!--formulario-->
 
             <div class="container">
             
-                <form id="registro" novalidate>
+                <form id="registro" name="registro">
                     <ul>
                         <center><p style="font-size: 50px;">Iniciar sesión</p></center>
                         <p>
-                        
-                            <label>Nombre</label>
+                            
+                            <label for="nombre">Nombre</label>
                             <span></span>
                             <br>
-                            <input type="text" id="rut" required/>
+                            <input type="text" id="nombre" name="nombre">
 
                         </p>
                         <p>
@@ -43,7 +43,7 @@
                             <label>Contraseña</label>
                             <span></span>
                             <br>
-                            <input type="text" id="contrasena" required/>
+                            <input type="text" id="contrasena" name="contrasena">
 
                         </p>
 
@@ -60,6 +60,8 @@
             <a href="reporte.html"><button style="color: crimson;">Reportar error</button></a>
         </footer>
         
-        <script src="" async defer></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>   
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" crossorigin="anonymous"></script>
+        <script src="js-jquery/login.js"></script>
     </body>
 </html>
