@@ -58,4 +58,9 @@ $().ready(function () {
             }
         }
     })
+
+    $("#botonRecuperar").click(function(){
+        window.location.href='recuperarClave.html';
+     })
+
 });
