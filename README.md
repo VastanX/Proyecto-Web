@@ -21,5 +21,14 @@
  Contacto: Al hacer click se abrira un formulario para enviar dudas y ponerse en contacto directo con los desarrolladores.
 
 
+EP 2
+
+*Se corrigieron las cabeceras*
+
+EP2.1:
+
+EP2.2: En la pagina de "login" se incluyó el botón recuperar clave que redirije usando jQuery.
+
+EP2.3: Los formularios de "login","registro","reportar problema","contacto" y "recuperar clave" son validados usando jQuery.
 
 
