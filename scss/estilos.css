@@ -1,0 +1,140 @@
+div .row {
+  /* flex-wrap:nowrap; */
+  margin-top: 100px;
+}
+
+.cuento, .container {
+  color: white;
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 5rem;
+  color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+body {
+  background-image: url(../Assets/detalles/c2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+figcaption {
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 20px;
+  background: none;
+  border: none;
+  background-image: url(../Assets/detalles/pergamino.png);
+  background-repeat: no-repeat;
+  background-position: 0px -5px;
+  font-style: italic;
+}
+
+.bloque {
+  display: grid;
+  margin-top: 100px;
+  margin-left: 50px;
+  width: 300px;
+  height: 100px;
+}
+
+.recomendaciones {
+  font-size: 50px;
+}
+
+.listadoReco {
+  display: flex;
+  width: 10px;
+  height: 300px;
+}
+
+.cuadro {
+  height: 390px;
+  width: 270px;
+}
+
+.paginaCuento {
+  height: 700px;
+  width: 500px;
+  display: flex;
+  margin-left: 600px;
+}
+
+p.Info {
+  color: white;
+  font-size: 500%;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.info {
+  font-size: 350%;
+  color: black;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+.cabecera {
+  display: flex;
+  list-style: none;
+  float: right;
+}
+
+/* cdc */
+#registro {
+  border: dotted;
+  border-radius: 100px;
+  text-align: center;
+  font-size: 140%;
+  background-color: cornsilk;
+  color: black;
+}
+
+li.texto_info {
+  font-size: 140%;
+  color: black;
+  border: solid;
+  background-color: wheat;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: -700px;
+}
+
+#toc_container {
+  background: wheat none repeat scroll 0 0;
+  border: solid black;
+  display: table;
+  font-size: 95%;
+  margin-left: 100px;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  padding: 100px;
+  width: auto;
+}
+
+.toc_title {
+  font-weight: 700;
+  text-align: center;
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li {
+  list-style: outside none none !important;
+}
+
+.c1 {
+  height: 700px;
+  width: 700;
+  margin-top: 100px;
+}/*# sourceMappingURL=estilos.css.map */
