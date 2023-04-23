@@ -61,6 +61,21 @@ $().ready(function () {
 
     $("#botonRecuperar").click(function(){
         window.location.href='recuperarClave.html';
-     })
+    })
+     
+    jQuery.validator.setDefaults({
+    debug: true,
+    success: "valid"
+    });
+    var form = $( "#registro" );
+    form.validate();
+    $( "#ingresar" ).click(function() {
 
+    if(form.valid() == false){
+        alert("¡¡Complete todos los campos!!");
+    }else{
+        alert("Inicio de sesión exitoso")
+        window.location.href='index.html';
+    }
+    });
 });

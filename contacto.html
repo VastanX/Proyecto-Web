@@ -13,10 +13,9 @@
 
     </head>
     <body>
-
+<!-- cabecera -->
         <div class="container">
             <div class="row">
-              
               <div class="col">
                 <div class="cabecera">
                   <ul><a href="index.html"><button>Volver a inicio</button></a></ul>
@@ -39,55 +38,31 @@
             </div>
           </div>
         
+          <!-- formulario -->
         <div class="container">
-            <form id="registro" novalidate>
-                <ul>
-                    <center><p style="font-size: 50px;">Formulario de contacto</p></center>
-                    <p>
-                    
-                        <label for="nombre">Nombre completo</label>
-                        <span></span>
-                        <br>
-                        <input style="font-size: 20px;" type="text" id="nombre" name="nombre"/>
-
-                    </p>
-                    <p>
-                    
-                        <label for="email">Correo de contacto</label>
-                        <span></span>
-                        <br>
-                        <input style="font-size: 20px;" type="email" id="email" name="email" />
-                    
-                    </p>
-                    <p>
-                    
-                        <label for="telefono">Telefono de contacto (+56)</label>
-                        <span></span>
-                        <br>
-                        <input style="font-size: 20px;" type="text" id="telefono" name="telefono">
-
-                    </p>
-                    <p>
-                    
-                        <label for="asunto">Asunto</label>
-                        <span></span>
-                        <br>
-                        <input style="font-size: 20px;" type="text" id="asunto" name="asunto">
-
-                    </p>
-                    <p>
-                    
-                        <label for="descripcion">Descripción </label>
-                        <span></span>
-                        <br>
-                        <input style="height: 50px; width: 400px;" type="text" id="descripcion" name="descripcion">
-
-                    </p>
-
-                    <button type="submit">Enviar</button>
-                
-                </ul>
-            </form>
+          <form id="registro" name="registro" novalidate>
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre completo</label>
+                  <input type="text" class="form-control" id="nombre" name="nombre" >
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Correo de contacto</label>
+                  <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="mb-3">
+                  <label for="telefono" class="form-label">Teléfono de contacto (+56)</label>
+                  <input type="text" class="form-control" id="telefono" name="telefono">
+                </div>
+                <div class="mb-3">
+                  <label for="asunto" class="form-label">Asunto</label>
+                  <input type="text" class="form-control" id="asunto" name="asunto">
+                </div>
+                <div class="mb-3">
+                  <label for="descripcion" class="form-label">Descripción</label>
+                  <input type="text" class="form-control" id="descripcion" name="descripcion">
+                </div>
+                <button type="submit">Enviar</button>
+              </form>
         </div>
 
         <footer>
