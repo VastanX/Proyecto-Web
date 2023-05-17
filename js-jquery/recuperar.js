@@ -45,6 +45,7 @@ $().ready(function () {
             alert("¡¡Complete todos los campos!!");
         }else{
             alert("Completado con exito, se envío un link de recuperación a su correo.")
+            window.location.href='index.html';
         }
       });
       

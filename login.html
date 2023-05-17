@@ -14,7 +14,7 @@
 
     </head>
     <body>
-
+        <!-- cabecera -->
         <div class="container">
             <div class="row">
               <div class="col">
@@ -40,36 +40,23 @@
           </div>
 
         <section>
+
             <!--formulario-->
 
             <div class="container">
             
-                <form id="registro" name="registro">
-                    <ul>
-                        <center><p style="font-size: 50px;">Iniciar sesión</p></center>
-                        <p>
-                            
-                            <label for="nombre">Nombre</label>
-                            <span></span>
-                            <br>
-                            <input type="text" id="nombre" name="nombre">
-
-                        </p>
-                        <p>
-                        
-                            <label>Contraseña</label>
-                            <span></span>
-                            <br>
-                            <input type="text" id="contrasena" name="contrasena">
-
-                        </p>
-
-                        <button type="submit">Ingresar</button>
-                        <button type="button" id="botonRecuperar" name="botonRecuperar">Recuperar clave</button>
-                    
-                    </ul>
-                </form>
-
+              <form id="registro" name="registro">
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="nombre" name="nombre" >
+                </div>
+                <div class="mb-3">
+                  <label for="contrasena" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="contrasena" name="contrasena">
+                </div>
+                <button type="button" id="ingresar" name="ingresar">Ingresar</button>
+                <button type="button" id="botonRecuperar" name="botonRecuperar">Recuperar clave</button>
+              </form>
             </div>
         </section>
       
