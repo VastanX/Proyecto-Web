@@ -182,7 +182,7 @@ function App() {
 
              
 
-<footer>
+     <footer>
       <a href="reporte.html"><button >Reportar error</button></a>
     </footer>
 
