@@ -32,3 +32,4 @@ EP2.2: En la pagina de "login" se incluyó el botón recuperar clave que redirij
 EP2.3: Los formularios de "login","registro","reportar problema","contacto" y "recuperar clave" son validados usando jQuery.
 
 
+!!solo tienes que ver modificar App.js , Home.js y cuentos1  en adelante!!
