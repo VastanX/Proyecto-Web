@@ -97,9 +97,9 @@ function App() {
               </figcaption>
               <a href="cuento4.html">
                 <button>Ver detalles</button>
-</a>
-</figure>
-</div>
+              </a>
+            </figure>
+  </div>
 </div>
 
 <div className="row">
