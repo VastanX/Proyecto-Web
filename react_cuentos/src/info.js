@@ -1,22 +1,10 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+import 'bootstrap/dist/css/bootstrap.css';
+import './App.css';
 
-    <link rel="stylesheet" href="scss/estilos.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-  </head>
-  <body>
-    <div class="container">
+function Info() {
+    return (
+      <>
+      <div class="container">
       <div class="row">
         <div class="col">
           <div class="cabecera">
@@ -45,17 +33,16 @@
       <center><p class="Info">¿Quienes somos?</p></center>
 
       <li>
-        <center><img src="logoU.png" class="logo" style="width: 50%;"></center>
+        <center><img src="logoU.png" class="logo" style="width: 50%;"></img></center>
       </li>
 
       <p>
-        <br>
         <center>
           <li class="texto_info">El proyecto creado por dos estudiantes de la Pontificia Universidad Católica de Valparaíso (PUCV) es una página web diseñada para ayudar a los niños a aprender a leer mediante la lectura de cuentos. La página incluye una colección de cuentos cortos adecuados para niños de diversas edades, desde preescolar hasta primaria.
 
             La página web tiene un diseño sencillo pero atractivo, que permite a los niños navegar fácilmente por la colección de cuentos. Los cuentos se organizan en diferentes categorías, como animales, aventuras, fantasía y amistad, lo que facilita la búsqueda de historias según los intereses de los niños.
             
-            <br><br>Actualmente, el proyecto se encuentra en proceso de desarrollo, por lo que solo cuenta con la función básica de lectura de cuentos. Sin embargo, los estudiantes tienen planes de incluir actividades interactivas en el futuro para ayudar a los niños a mejorar su comprensión lectora. 
+            <br></br><br></br>Actualmente, el proyecto se encuentra en proceso de desarrollo, por lo que solo cuenta con la función básica de lectura de cuentos. Sin embargo, los estudiantes tienen planes de incluir actividades interactivas en el futuro para ayudar a los niños a mejorar su comprensión lectora. 
           </li>
         </center>
       </p>
@@ -71,5 +58,6 @@
 
     <script src="" async defer></script>
   
-  </body>
-</html>
+      </>
+    );
+}
