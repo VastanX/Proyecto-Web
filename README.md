@@ -33,3 +33,4 @@ EP2.3: Los formularios de "login","registro","reportar problema","contacto" y "r
 
 
 !!solo tienes que ver modificar App.js , Home.js y cuentos1  en adelante!!
+CAmbio de cuenta
