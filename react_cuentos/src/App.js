@@ -10,7 +10,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/cuento1" element={<Cuento1 />} />
         <Route path="/Home.js" element={<Home />} />
-
+{/* estas son las rutas para comunicarte entre paginas */}
       
       </Routes>
     </Router>
