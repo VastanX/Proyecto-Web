@@ -1,5 +1,5 @@
 import React from 'react';
-import c1 from '../fotos de cuentos/c1.png';
+import c2 from '../fotos de cuentos/c2.png';
 import Recomendaciones from './Recomendaciones';
 import "../App.css";
 import { Link } from 'react-router-dom';
@@ -15,11 +15,11 @@ function Cuento() {
 
       <div>
         <center>
-          <p style={{ fontSize: '70px' }}>Caperucita roja</p>
+          <p style={{ fontSize: '70px' }}>El gato con botas</p>
           <div className="container">
             <div className="row">
               <div className="col d-flex justify-content-center align-items-center">
-                <img src={c1} alt="" height={ "500px" } className="portadas" />
+                <img src={c2} alt="" height={ "500px"} className="portadas" />
               </div>
               <div className="row">
                 <div className="col">
