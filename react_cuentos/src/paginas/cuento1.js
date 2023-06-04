@@ -4,23 +4,15 @@ import c2 from '../fotos de cuentos/c2.png';
 import c3 from '../fotos de cuentos/c3.png';
 import "../App.css";
 import { Link } from 'react-router-dom';
+import Cabecera from './Cabecera';
 
 // importa las demás imágenes según sea necesario
 
 function Cuento1() {
   return (
     <div>
-      <div className="container">
-        <div className="col-sm-4">
-        <Link to="/"><button >Volver al inicio</button></Link>
-        </div>
-        <div className="col-sm-4">
-          <a href="info.html"><button>Información</button></a>
-          <a href="login.html"><button>Iniciar sesión</button></a>
-          <a href="contacto.html"><button>Contacto</button></a>
-          <a href="registro.html"><button>Registrarse</button></a>
-        </div>
-      </div>
+
+      {<Cabecera />}
 
       <center>
         <p style={{ fontSize: '70px' }}>Caperucita roja</p>
@@ -52,7 +44,7 @@ function Cuento1() {
             <a href="cuento3.html"><img height="300px" src={c3} alt="" /></a>
           </div>
           <div className="col">
-            <a href="reporte.html"><button style={{ color: 'crimson' }}>Reportar error</button></a>
+            <Link to="/Reporte"><button style={{ color: 'crimson' }}>Reportar error</button></Link>
           </div>
         </div>
       </div>

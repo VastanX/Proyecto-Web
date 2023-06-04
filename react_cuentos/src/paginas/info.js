@@ -1,40 +1,22 @@
-import 'bootstrap/dist/css/bootstrap.css';
-import './App.css';
+import React from 'react';
+import "../App.css";
+import logo from '../recursos/logoU.png'
+import { Link } from 'react-router-dom';
+import Cabecera from './Cabecera';
 
 function Info() {
     return (
       <>
-      <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="cabecera">
-            <ul><a href="index.html"><button>Volver a inicio</button></a></ul>
-          </div>
-        </div>
-        <div class="col">
-          <div class="cabecera">
-            <ul><a href="info.html"><button>Información</button></a></ul>
-          </div>
-        </div>
-        <div class="col">
-          <ul><a href="login.html"><button>Iniciar sesión</button></a></ul>
-        </div>
-        <div class="col">
-          <ul><a href="registro.html"><button>Registrarse</button></a></ul>
-        </div>
-        <div class="col">
-          <ul><a href="contacto.html"><button>Contacto</button></a></ul>
-        </div>
-      </div>
-    </div>
+      {<Cabecera />}
     
     <div class="informa">
 
       <center><p class="Info">¿Quienes somos?</p></center>
 
-      <li>
-        <center><img src="logoU.png" class="logo" style="width: 50%;"></img></center>
-      </li>
+      <center><li>
+        {/* <center><img src="logoU.png" class="logo" style="width: 50%;"></img></center> */}
+        <img src={logo} style={{ width: '50%'}} alt="Logo de la u" className="logo" />
+      </li></center>
 
       <p>
         <center>
@@ -52,12 +34,12 @@ function Info() {
       </p>
     </div>
 
-    <footer>
-      <a href="reporte.html"><button style="color: crimson;">Reportar error</button></a>
-    </footer>
+    <div className="col">
+        <Link to="/Reporte"><button style={{ color: 'crimson' }}>Reportar error</button></Link>
+    </div>
 
-    <script src="" async defer></script>
-  
-      </>
+    </>
     );
 }
+
+export default Info;

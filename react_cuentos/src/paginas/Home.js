@@ -28,31 +28,31 @@ function Home() {
           <div className="col">
             <div className="cabecera">
               <ul>
-                <a href="info.html">
+                <Link to="/info">
                   <button>Información</button>
-                </a>
+                </Link> 
               </ul>
             </div>
           </div>
           <div className="col">
             <ul>
-              <a href="contacto.html">
+              <Link to="/contacto">
                 <button>Contacto</button>
-              </a>
+              </Link>
             </ul>
           </div>
           <div className="col">
             <ul>
-              <a href="login.html">
+              <Link to="/login">
                 <button>Iniciar sesión</button>
-              </a>
+              </Link>
             </ul>
           </div>
           <div className="col">
             <ul>
-              <a href="registro.html">
+              <Link to="/registro">
                 <button>Registrarse</button>
-              </a>
+              </Link>
             </ul>
           </div>
         </div>
@@ -187,7 +187,7 @@ function Home() {
              
 
      <footer>
-      <a href="reporte.html"><button >Reportar error</button></a>
+      <Link to="/Reporte"><button >Reportar error</button></Link>
     </footer>
 
    
