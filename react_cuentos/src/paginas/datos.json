@@ -1,0 +1,117 @@
+{ "personas":[
+    {
+      "nombre": "Miguel Otto",
+      "email": "miguel@otto.com",
+      "contrasena": "123456",
+      "telefono": "912345678"
+    },
+    {
+      "nombre": "Pancho Saavedra",
+      "email": "pancho@saavedra.com",
+      "contrasena": "7894562",
+      "telefono": "965431287"
+    },
+    {
+      "nombre": "Arturo Pratt",
+      "email": "arturo@pratt.com",
+      "contrasena": "32186",
+      "telefono": "925419753"
+    },
+    {
+      "nombre": "Laura García",
+      "email": "laura@garcia.com",
+      "contrasena": "987654",
+      "telefono": "934567890"
+    },
+    {
+      "nombre": "Carlos Vargas",
+      "email": "carlos@vargas.com",
+      "contrasena": "456321",
+      "telefono": "977654321"
+    },
+    {
+      "nombre": "Sofía Mendoza",
+      "email": "sofia@mendoza.com",
+      "contrasena": "159753",
+      "telefono": "912345678"
+    },
+    {
+      "nombre": "Andrés Castro",
+      "email": "andres@castro.com",
+      "contrasena": "753951",
+      "telefono": "965432178"
+    },
+    {
+      "nombre": "Valentina Rojas",
+      "email": "valentina@rojas.com",
+      "contrasena": "654987",
+      "telefono": "923451678"
+    },
+    {
+      "nombre": "Diego Soto",
+      "email": "diego@soto.com",
+      "contrasena": "852741",
+      "telefono": "976543219"
+    },
+    {
+      "nombre": "Carolina Paredes",
+      "email": "carolina@paredes.com",
+      "contrasena": "369852",
+      "telefono": "912347568"
+    },
+    {
+      "nombre": "Lucas Silva",
+      "email": "lucas@silva.com",
+      "contrasena": "785412",
+      "telefono": "967895432"
+    },
+    {
+      "nombre": "María Torres",
+      "email": "maria@torres.com",
+      "contrasena": "123789",
+      "telefono": "925432176"
+    },
+    {
+      "nombre": "Eduardo Castro",
+      "email": "eduardo@castro.com",
+      "contrasena": "987123",
+      "telefono": "934561287"
+    },
+    {
+      "nombre": "Paula Fuentes",
+      "email": "paula@fuentes.com",
+      "contrasena": "456789",
+      "telefono": "977653421"
+    },
+    {
+      "nombre": "Roberto Méndez",
+      "email": "roberto@mendez.com",
+      "contrasena": "753159",
+      "telefono": "912345678"
+    },
+    {
+      "nombre": "Fernanda Rojas",
+      "email": "fernanda@rojas.com",
+      "contrasena": "654321",
+      "telefono": "965432187"
+    },
+    {
+      "nombre": "Sebastián Ortega",
+      "email": "sebastian@ortega.com",
+      "contrasena": "987654",
+      "telefono": "923451769"
+    },
+    {
+      "nombre": "Camila Castro",
+      "email": "camila@castro.com",
+      "contrasena": "852963",
+      "telefono": "976543219"
+    },
+    {
+      "nombre": "Juan González",
+      "email": "juan@gonzalez.com",
+      "contrasena": "369741",
+      "telefono": "912348765"
+    }
+  ]  
+}

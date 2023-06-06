@@ -17,6 +17,7 @@ import Contacto from './paginas/contacto';
 import Login from './paginas/login';
 import Registro from './paginas/registro';
 import Reporte from './paginas/Reporte';
+import Lista from './paginas/listaPersonas';
 
 function App() {
   return (
@@ -41,7 +42,7 @@ function App() {
         <Route path="/registro" element={<Registro />}/>
         <Route path="/reporte" element={<Reporte />}/>
         <Route path="/LeerAhora" element={<LeerAhora />}/>
-
+        <Route path="/lista" element={<Lista />}/>
         
         
 {/* estas son las rutas para comunicarte entre paginas */}
