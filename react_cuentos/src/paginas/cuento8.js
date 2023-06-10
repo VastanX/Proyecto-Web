@@ -27,7 +27,7 @@ function Cuento() {
                     <Link to={"/LeerAhora"}><button>Leer ahora</button></Link>
                     <button>Ver estadisticas</button>
                     <a href="milista.html"><button>Añadir a mi lista</button></a>
-                    <a href="calificacion.html"><button>Calificar libro</button></a>
+                    <Link to={'/calificacion'}><button>Calificar libro</button></Link>
                   </div>
                 </div>
               </div>

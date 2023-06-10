@@ -18,6 +18,9 @@ import Login from './paginas/login';
 import Registro from './paginas/registro';
 import Reporte from './paginas/Reporte';
 import Lista from './paginas/listaPersonas';
+import RecuperarClave from './paginas/recuperarClave';
+import Calificacion from './paginas/calificacion';
+import MiLista from './paginas/miLista';
 
 function App() {
   return (
@@ -43,6 +46,10 @@ function App() {
         <Route path="/reporte" element={<Reporte />}/>
         <Route path="/LeerAhora" element={<LeerAhora />}/>
         <Route path="/lista" element={<Lista />}/>
+        <Route path="/RecuperarClave" element={<RecuperarClave />}/>
+        <Route path="/calificacion" element={<Calificacion />}/>
+        <Route path="/MiLista" element={<MiLista />}/>
+        
         
         
 {/* estas son las rutas para comunicarte entre paginas */}
