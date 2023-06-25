@@ -54,6 +54,13 @@ function Home() {
               </Link>
             </ul>
           </div>
+          <div className="col">
+            <ul>
+              <Link to="/lista">
+                <button>ADMIN</button>
+              </Link>
+            </ul>
+          </div>
         </div>
       </div>
 
