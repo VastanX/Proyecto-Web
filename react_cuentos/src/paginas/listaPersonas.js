@@ -129,6 +129,7 @@ function MyComponent() {
           placeholder="Nombre"
           value={formData.nombre}
           onChange={handleChange}
+          required
         />
         <input
           type="email"
@@ -136,6 +137,7 @@ function MyComponent() {
           placeholder="Email"
           value={formData.email}
           onChange={handleChange}
+          required
         />
         <input
           type="password"
@@ -143,6 +145,7 @@ function MyComponent() {
           placeholder="Contraseña"
           value={formData.contrasena}
           onChange={handleChange}
+          required
         />
         <input
           type="tel"
@@ -150,6 +153,10 @@ function MyComponent() {
           placeholder="Teléfono"
           value={formData.telefono}
           onChange={handleChange}
+          required
+          minLength={9}
+          maxLength={9}
+          pattern="[0-9]+"
         />
         <button type="submit">Guardar</button>
       </form>
