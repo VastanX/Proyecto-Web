@@ -11,7 +11,9 @@ import Cuento7 from './paginas/cuento7';
 import Cuento8 from './paginas/cuento8';
 import Cuento9 from './paginas/cuento9';
 import Cuento10 from './paginas/cuento10';
-import LeerAhora from './paginas/LeerAhora';
+import LeerAhora from './paginas/LeerCaperucita';
+import LeerPatitoFeo from './paginas/LeerPatito';
+import LeerTresC from './paginas/LeerTC';
 import Info from './paginas/info';
 import Contacto from './paginas/contacto';
 import Login from './paginas/login';
@@ -21,6 +23,7 @@ import Lista from './paginas/listaPersonas';
 import RecuperarClave from './paginas/recuperarClave';
 import Calificacion from './paginas/calificacion';
 import MiLista from './paginas/miLista';
+import Stats from './paginas/Estadisticas'
 
 function App() {
   return (
@@ -45,11 +48,13 @@ function App() {
         <Route path="/registro" element={<Registro />}/>
         <Route path="/reporte" element={<Reporte />}/>
         <Route path="/LeerAhora" element={<LeerAhora />}/>
+        <Route path="/LeerPatitoFeo" element={<LeerPatitoFeo />}/>
+        <Route path="/LeerTC" element={<LeerTresC />}/>
         <Route path="/lista" element={<Lista />}/>
         <Route path="/RecuperarClave" element={<RecuperarClave />}/>
         <Route path="/calificacion" element={<Calificacion />}/>
         <Route path="/MiLista" element={<MiLista />}/>
-        
+        <Route path="/Estadisticas" element= {<Stats />}/>
         
         
 {/* estas son las rutas para comunicarte entre paginas */}

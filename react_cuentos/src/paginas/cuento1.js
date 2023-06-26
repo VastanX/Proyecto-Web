@@ -25,7 +25,7 @@ function Cuento() {
                 <div className="col">
                   <div className="boton">
                     <Link to={"/LeerAhora"}><button>Leer ahora</button></Link>
-                    <button>Ver estadisticas</button>
+                    <Link to={"/Estadisticas"}><button>Ver estadisticas</button></Link>
                     <Link to={'/miLista'}><button>Añadir a mi lista</button></Link>
                     <Link to={'/calificacion'}><button>Calificar libro</button></Link>
                   </div>

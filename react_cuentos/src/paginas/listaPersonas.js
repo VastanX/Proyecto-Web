@@ -105,7 +105,7 @@ function MyComponent() {
       <div className='centrado'>
       <h1 style={{  color: "white" }}> Administrar usuarios</h1>
       <p style={{ fontSize: "20px", color: "black", backgroundColor: "wheat"}}> Para agregar usuarios: Rellene el formulario y presione agregar.</p>
-      <p style={{ fontSize: "20px", color: "black", backgroundColor: "wheat"}}> Para modificar usuarios: Rellene el formulario y presione modificar bajo el usuario deseado.</p>
+      <p style={{ fontSize: "20px", color: "black", backgroundColor: "wheat"}}> Para modificar usuarios: Rellene el formulario y presione actualizar bajo el usuario deseado.</p>
       </div>
       {<Cabecera />}
       <div style={{ display: 'flex', padding: '100px' }}>
