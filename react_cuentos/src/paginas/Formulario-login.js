@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
+
 class Formulario extends React.Component {
   state = {
     nombre: '',
@@ -7,8 +9,7 @@ class Formulario extends React.Component {
     errors: {},
   };
 
-  handleIngresar = () => {
-    // Validar el formulario antes de manejar el evento de ingreso
+  handleIngresar = async () => {
     const { nombre, contrasena } = this.state;
     const errors = {};
 
@@ -18,14 +19,38 @@ class Formulario extends React.Component {
 
     if (contrasena.trim() === '') {
       errors.contrasenaError = 'La contraseña es obligatoria';
-    } else if (contrasena.length < 6 || !/^\d+$/.test(contrasena)) {
-      errors.contrasenaError = 'La contraseña debe tener al menos 6 caracteres y contener solo números';
+    } else if (contrasena.length < 6 || !/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&+=!])(?=.*[^\w\s]).{8,}$/.test(contrasena)) {
+      errors.contrasenaError =
+        'La contraseña debe contener al menos una minúscula, una mayúscula, un número, un carácter especial y un largo mínimo de 8 caracteres';
     }
 
     if (Object.keys(errors).length > 0) {
       this.setState({ errors });
     } else {
-      alert('Inicio de sesión exitoso!');
+      try {
+        const response = await fetch('http://localhost:4000/verificar-login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ nombre, contrasena }),
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+          if (nombre === 'ADMIN' && contrasena === '123987') {
+            alert('Inicio de sesión exitoso como administrador!');
+          } else {
+            alert('Inicio de sesión exitoso!');
+          }
+        } else {
+          alert('Los datos de inicio de sesión no coinciden');
+        }
+      } catch (error) {
+        console.error(error);
+        alert('Ocurrió un error al comunicarse con el servidor');
+      }
     }
   };
 
@@ -48,7 +73,9 @@ class Formulario extends React.Component {
       <div className="container">
         <form id="registro" name="registro">
           <div className="mb-3">
-            <label htmlFor="nombre" className="form-label">Nombre</label>
+            <label htmlFor="nombre" className="form-label">
+              Nombre
+            </label>
             <input
               type="text"
               className="form-control"
@@ -58,10 +85,14 @@ class Formulario extends React.Component {
               onChange={this.handleInputChange}
               onKeyPress={this.handleKeyPress}
             />
-            {errors.nombreError && <span className="error-message">{errors.nombreError}</span>}
+            {errors.nombreError && (
+              <span className="error-message">{errors.nombreError}</span>
+            )}
           </div>
           <div className="mb-3">
-            <label htmlFor="contrasena" className="form-label">Contraseña</label>
+            <label htmlFor="contrasena" className="form-label">
+              Contraseña
+            </label>
             <input
               type="password"
               className="form-control"
@@ -71,10 +102,23 @@ class Formulario extends React.Component {
               onChange={this.handleInputChange}
               onKeyPress={this.handleKeyPress}
             />
-            {errors.contrasenaError && <span className="error-message">{errors.contrasenaError}</span>}
+            {errors.contrasenaError && (
+              <span className="error-message">{errors.contrasenaError}</span>
+            )}
           </div>
-          <button type="button" id="ingresar" name="ingresar" onClick={this.handleIngresar}>Ingresar</button>
-          <Link to={"/recuperarClave"}><button type="button" id="botonRecuperar" name="botonRecuperar">Recuperar clave</button></Link>
+          <button
+            type="button"
+            id="ingresar"
+            name="ingresar"
+            onClick={this.handleIngresar}
+          >
+            Ingresar
+          </button>
+          <Link to={'/recuperarClave'}>
+            <button type="button" id="botonRecuperar" name="botonRecuperar">
+              Recuperar clave
+            </button>
+          </Link>
         </form>
       </div>
     );

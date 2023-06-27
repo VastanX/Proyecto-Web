@@ -31,7 +31,7 @@ CREATE TABLE `personas` (
   `id` int(100) NOT NULL,
   `nombre` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
-  `contrasena` int(100) NOT NULL,
+  `contrasena` varchar(200) NOT NULL,
   `telefono` int(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 

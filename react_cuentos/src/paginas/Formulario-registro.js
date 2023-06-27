@@ -10,7 +10,7 @@ class FormularioRegistro extends Component {
     errors: {},
   };
 
-  handleSubmit = (event) => {
+  handleSubmit = async (event) => {
     event.preventDefault();
 
     const { nombre, email, contrasena, recontrasena, telefono } = this.state;
@@ -24,9 +24,9 @@ class FormularioRegistro extends Component {
       errors.emailError = 'Por favor, ingresa un correo electrónico válido';
     }
 
-    if (!this.validateField(contrasena, /^\d{6,}$/)) {
+    if (!this.validateField(contrasena, /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&+=!])(?=.*[^\w\s]).{8,}$/)) {
       errors.contrasenaError =
-        'La contraseña debe tener al menos 6 caracteres y contener solo números';
+        'La contraseña debe contener al menos una minúscula, una mayúscula, un número, un carácter especial y un largo mínimo de 8 caracteres';
     }
 
     if (contrasena !== recontrasena) {
@@ -40,7 +40,40 @@ class FormularioRegistro extends Component {
     if (Object.keys(errors).length > 0) {
       this.setState({ errors });
     } else {
-      alert('Registro exitoso!');
+      try {
+        const response = await fetch('http://localhost:4000/crear', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            nombre,
+            email,
+            contrasena,
+            telefono,
+          }),
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+          alert('Registro exitoso! (Datos añadidos a la BASE DE DATOS)');
+          // Restablecer el formulario
+          this.setState({
+            nombre: '',
+            email: '',
+            contrasena: '',
+            recontrasena: '',
+            telefono: '',
+            errors: {},
+          });
+        } else {
+          alert(data.message);
+        }
+      } catch (error) {
+        console.error('Error al realizar la solicitud:', error);
+        alert('Error al intentar registrarse');
+      }
     }
   };
 

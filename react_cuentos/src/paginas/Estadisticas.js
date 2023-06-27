@@ -1,10 +1,6 @@
-/*
-    Estos 'imports' sirven para incluir bootstrap, NO son necesarios para
-    utilizar las gráficas de ChartJS. Yo los utilizaré para modificar 
-    rápidamente el aspecto de mi página durante los ejemplos expuestos. 
-*/
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
+import Cabecera from './Cabecera';
 
 import LinesChart from "./Grafico";
 
@@ -13,6 +9,8 @@ function App() {
         <div>
             {/* Aquí incluiré las gráficas (un componente por cada ejemplo). */}
             <h1 className="centrado" style={{ color: "white", backgroundColor: "wheat", fontSize: "70px"}}>Estadísticas</h1>
+
+            <Cabecera />
            
             <p className="centrado" style={{ color: "white", fontSize: "40px", paddingTop: "90px"}}> Número de páginas por cuento </p>
             <div>

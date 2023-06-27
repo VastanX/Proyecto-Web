@@ -108,7 +108,7 @@ function MyComponent() {
       <p style={{ fontSize: "20px", color: "black", backgroundColor: "wheat"}}> Para modificar usuarios: Rellene el formulario y presione actualizar bajo el usuario deseado.</p>
       </div>
       {<Cabecera />}
-      <div style={{ display: 'flex', padding: '100px' }}>
+      <div style={{ display: 'list-item', padding: '100px' }}>
       {personas.map((persona, index) => (
         <div key={index} style={{ padding: '10px' }}>
           <div className="container" style={{ backgroundColor: 'wheat', border: "dotted", borderRadius: "10px"}}>
@@ -146,7 +146,13 @@ function MyComponent() {
           value={formData.contrasena}
           onChange={handleChange}
           required
+          minLength={8}
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&+=!]).{8,}$"
+          title="La contraseña debe contener al menos una minúscula, una mayúscula, un número y un carácter especial, con un largo mínimo de 8 caracteres"
         />
+
+
+
         <input
           type="tel"
           name="telefono"
