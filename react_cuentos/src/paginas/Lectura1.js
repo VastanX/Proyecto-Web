@@ -30,7 +30,7 @@ function Lectura() {
           <button className="carousel-control-prev" onClick={prevSlide}>
             Anterior
           </button>
-        <button className="carousel-control-next" onClick={nextSlide}>
+          <button className="carousel-control-next" onClick={nextSlide}>
             Siguiente
           </button>
         </div>

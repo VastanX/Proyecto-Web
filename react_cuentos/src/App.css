@@ -7,9 +7,9 @@ div .row{
 .cuento, .container{
   color: white;
   text-align: center;
-
-
+  
 }
+
 
 .center {
   display: flex;
@@ -176,6 +176,7 @@ li.texto_info{
   justify-content: center;
   align-items: center;
   height: 100vh;
+  
 }
 
 .carousel {
@@ -191,6 +192,7 @@ li.texto_info{
 
 .carousel-controls {
   margin-top: 10px;
+
 }
 
 .carousel-control-prev,
@@ -198,7 +200,6 @@ li.texto_info{
 
   font-size: large;
   
-  /* Button styles */
 }
 
 .centrado {

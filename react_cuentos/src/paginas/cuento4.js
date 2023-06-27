@@ -15,7 +15,7 @@ function Cuento() {
 
       <div>
         <center>
-          <p style={{ fontSize: '70px' }}>El patito feo</p>
+          <p style={{ fontSize: '70px', color:"white" }}>El patito feo</p>
           <div className="container">
             <div className="row">
               <div className="col d-flex justify-content-center align-items-center">
