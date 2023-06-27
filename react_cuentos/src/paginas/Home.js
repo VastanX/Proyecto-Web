@@ -15,6 +15,15 @@ import c10 from '../fotos de cuentos/c10.png';
 
 
 function Home() {
+
+  const isAdmin = localStorage.getItem('adminToken'); // Verifica si hay un token de administrador almacenado
+
+  const handleLogout = () => {
+    localStorage.removeItem('adminToken'); // Elimina el token de administrador al cerrar sesión
+    alert('Cierre de sesión exitoso');
+    window.location.reload(); // Refresca la página
+  };
+
   return (
     <>
       <div className="container">
@@ -54,13 +63,16 @@ function Home() {
               </Link>
             </ul>
           </div>
-          <div className="col">
-            <ul>
+          {isAdmin ? (
+            <div className="col">
               <Link to="/lista">
-                <button>ADMIN</button>
-              </Link>
-            </ul>
-          </div>
+                    <button>ADMIN</button>
+                  </Link>
+              <button onClick={handleLogout}>Cerrar sesión</button>
+            </div>
+          ) : (
+            <></>
+          )}
         </div>
       </div>
 
